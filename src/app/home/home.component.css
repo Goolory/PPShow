@@ -115,7 +115,7 @@ a:hover{
 	width: 58px;
 	position: absolute;
 	z-index: 1000;
-	bottom: 40px;
+	bottom: -10px;
 	left: 50%;
 	margin-left: -29px;
 }
@@ -156,13 +156,13 @@ a:hover{
 .section-title p {
   font-size: 20px;
   line-height: 1.5;
-  color: #ddc87d;
+  color: #15293a;
   font-weight: 100;
 }
 #container b {
   font-size: 40px;
   line-height: 1.5;
-  color: #ddc87d;
+  color: #15293a;
   font-weight: 100;
 }
 
@@ -174,11 +174,13 @@ a:hover{
   background: #eaf4eb url('../assets/homeimg/images/section.jpg') repeat top left;
   box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
 }
-
+.section-title {
+  margin-top: 50px;
+}
 .section-main {
   text-align: center;
   padding-bottom: 120px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 	border-bottom: 1px solid #d0d6d9;
 }
 

@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
         animateClass: 'animated',
         offset: 100,
         callback: function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+          // console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
         }
       });
     wow.init();
