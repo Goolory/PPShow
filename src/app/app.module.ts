@@ -8,13 +8,11 @@ import { appRoutes } from './app.routes'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
-import { AlbumComponent } from './album/album.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AlbumComponent,
   ],
   imports: [
     BrowserModule,

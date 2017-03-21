@@ -22,6 +22,9 @@ export const appRoutes = [
 	},{
 		path:'about',
 		loadChildren:'./about/about.module#AboutModule'
+	},{
+		path:'album',
+		loadChildren:'./album/album.module#AlbumModule'
 	}
 	// ,{
 	// 	path:'**',//fallback router must in the last
