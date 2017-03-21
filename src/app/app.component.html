@@ -1,14 +1,56 @@
 <!-- 顶部导航 -->
-<div class="navbar main-nav  navbar-fixed-top">
+<div class="top-navbar navbar-fixed-top">
+    <div class="top-navbar-list">
+        <ul class="">
+            <li>
+                <a routerLink="home">首页</a>
+            </li>
+            <li>
+                <a routerLink="course">课件区</a>
+            </li>
+            <li>
+                <a routerLink="exam">试卷区</a>
+            </li>
+            <li>
+                <a routerLink="forum">讨论区</a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-navbar-header">
+        <a routerLink="home">
+            <img src="../assets/images/logo.jpg" width="60" height="60" alt="">
+        </a>
+    </div>
+    <!-- 用户已登录 -->
+    <div class="top-navbar-right">
+        <div  (mouseenter)="fooEnter()" (mouseleave)="fooOut()">
+            <a id="top-navbar-right" href="#" style="color: red">&nbsp;&nbsp;<img src="../assets/images/logo.jpg" width="40" height="40"></a>
+                <div class="g-user-card" *ngIf="showTimes">
+                    <a href="#" class="item"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;用户信息</a>
+                    <a href="#" class="item"><i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;用户消息</a>
+                    <a href="#" class="item"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;个人设置</a>
+                    <a href="#" class="item"><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;登出</a>
+                </div>
+        </div>
+    </div>
+    <!-- 用户未登录 -->
+    <!-- <div class="top-navbar-right no-login">
+        <a href="#"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
+    </div> -->
+</div>
+<!-- <div class="navbar">
     <div class="container">
         <div class="navbar-header">
-            
+
             <a routerLink="home">
                 <img src="../assets/images/logo.jpg" width="80" height="80" alt="">
             </a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar">
             <ul class="nav navbar-nav">
+                <li>
+                    <a routerLink="home">首页</a>
+                </li>
                 <li>
                     <a routerLink="course">课件区</a>
                 </li>
@@ -19,21 +61,24 @@
                     <a routerLink="forum">讨论区</a>
                 </li>
             </ul>
-            <ul  class="nav navbar-nav navbar-right">
+            <ul  class="nav navbar-nav navbar-right" style="display: none">
                 <li>
                     <a href="#"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
                 </li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="user-logined" (mouseenter)="fooEnter()" (mouseleave)="fooOut()">
+                    <a href="#">&nbsp;&nbsp;用户999</a>
+                </li>
+            </ul>
+            <div *ngIf="showTimes" class="g-user-card">dddddddddddd</div>
         </div>
     </div>
-</div>
-
+</div> -->
 <!-- 主体内容区域 -->
-<div class="container " style="margin-top: 200px ;height: 800px;">
+<div class=" container" style="margin-top: 200px ;height: 800px;">
     <router-outlet></router-outlet>
-
 </div>
-
 <!-- 底部区域 -->
 <div class="footer bs-footer footer-bar">
     <div class="container">

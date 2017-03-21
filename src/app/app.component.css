@@ -1,25 +1,117 @@
- .navbar{
+ /* 导航栏 */
+
+.top-navbar{
+	padding:0 200px 0 250px;
 	background-color:#15293a;
-	height:80px;
-	
+	height:60px;
+	font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+	min-width:1000px;
+	width:auto !important;
 }
-.navbar a{
-	color:#fff;
-	height:80px;
-	line-height:52px;
+.top-navbar-header{
+	float:left;
+	width:190px;
+	margin-left:-100%;
+	position:relative;
+	left:-130px;
+}
+.top-navbar-right{
+	float:left;
+	width:230px;
+	margin-left:-230px;
+	position:relative;
+	right:-230px;
+}
+.top-navbar-list{
+	float:left;
+	width:100%;
+	min-width:500px;
+}
+.top-navbar-list li{
+	display:inline-block;
+	list-style:none;
+}
+.top-navbar-list ul{
+	margin-bottom:0;
+}
+.top-navbar-list li a{
+	line-height:60px;
+	display:inline-block;
+	text-decoration:none;
 	width:120px;
 	text-align:center;
+	color:#dfebe1;
 }
-.navbar ul{
-	padding-left:15%;
+#top-navbar-right{
+	display:inline-block;
+	text-decoration:none;
+	line-height:60px;
+
 }
-.navbar ul li{
-	
+
+#top-navbar-right>img:hover{
+	border:2px solid red;
 }
-.navbar a:hover{
-	background-color:#fff;
-	color:#2c94ed;
-} 
+.top-navbar-list li a:hover{
+	background-color:#31495d;
+}
+
+
+#user-logined{
+	position: relative;
+}
+.g-user-card{
+	position: absolute;
+    right: 165px;
+    top: 60px;
+    width: 104px;
+    /* visibility: hidden; */
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+    z-index: 1000;
+    background-color:#fff;
+    height:150px;
+    padding:10px 0;
+}
+.g-user-card>.item{
+	color: #000;
+    font-size: 12px;
+    line-height: 1.75;
+    padding: 0.5em 1.5em !important;
+    text-decoration:none;
+    width:104px;
+    display: block;
+}
+.g-user-card>.item:hover{
+	background-color:#31495d;
+	color:#fff;
+}
+.g-user-card li{
+	color:#dfebe1;
+	display:block;
+	list-style:none;
+	line-height:30px;
+	border-bottom:1px solid #3e3e3e;
+	text-align:center;
+}
+.top-navbar-right a img{
+	display:inline-block;
+	border-radius:50%;
+	border:1px solid red;
+}
+.no-login>a{
+	display:block;
+	list-style:none;
+	line-height:60px;
+	width:80px;
+	text-decoration: none;
+	text-align: center;
+	color:#dfebe1;
+}
+.no-login>a:hover{
+	background-color:#31495d;
+}
+
+/* end导航栏 */
 .footer-bar{
 	text-align:center;
 	padding-top:100px;

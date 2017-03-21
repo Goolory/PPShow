@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-html{
-	/* max-width: 1056px; */
+
+body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #333 url('assets/images/bg.jpg') repeat top left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #f0f0f0;
+	overflow-y: scroll;
 }
