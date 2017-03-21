@@ -64,7 +64,7 @@
 	position: absolute;
     right: 165px;
     top: 60px;
-    width: 104px;
+    width: 115px;
     /* visibility: hidden; */
     box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
     z-index: 1000;
@@ -78,7 +78,7 @@
     line-height: 1.75;
     padding: 0.5em 1.5em !important;
     text-decoration:none;
-    width:104px;
+    width:115px;
     display: block;
 }
 .g-user-card>.item:hover{
