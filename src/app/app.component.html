@@ -1,1 +1,74 @@
+<!-- 顶部导航 -->
+<div class="top-navbar navbar-fixed-top" id="top-navbar">
+    <div class="top-navbar-list">
+        <ul class="">
+            <li>
+                <a routerLink="home">首页</a>
+            </li>
+            <li (mouseenter)="enterCourse()" (mouseleave)="enterCourse()">
+                <a href="javascript:;">教学区</a>
+                <div id="course-card" *ngIf="showCourse">
+                    <a routerLink="course" class="item">课件区</a>
+                    <a href="#" class="item">试卷区</a>
+                    <a href="#" class="item">作业区</a>
+                </div>
+            </li>
+            <li (mouseenter)="enterPic()" (mouseleave)="enterPic()">
+                <a routerLink="exam">贴图区</a>
+                <div id="course-card" *ngIf="showPic">
+                    <a routerLink="course" class="item">风光摄影</a>
+                    <a href="#" class="item">人像摄影</a>
+                    <a href="#" class="item">静物摄影</a>
+                    <a href="#" class="item">人文摄影</a>
+                    <a href="#" class="item">创意摄影</a>
+                </div>
+            </li>
+            <li>
+                <a routerLink="album">作品区</a>
+            </li>
+            <li>
+                <a routerLink="forum">讨论区</a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-navbar-header">
+        <a routerLink="home">
+            <img src="../assets/images/logo.jpg" width="60" height="60" alt="">
+        </a>
+    </div>
+    <!-- 用户已登录 -->
+    <div class="top-navbar-right">
+        <div  (mouseenter)="fooEnter()" (mouseleave)="fooEnter()">
+            <a id="top-navbar-right" href="#" style="color: red">&nbsp;&nbsp;<img src="../assets/images/logo.jpg" width="40" height="40"></a>
+                <div class="g-user-card" *ngIf="showTimes">
+                    <a href="#" class="item"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;用户信息</a>
+                    <a href="#" class="item"><i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;用户消息</a>
+                    <a href="#" class="item"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;个人设置</a>
+                    <a href="#" class="item"><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;登出</a>
+                </div>
+        </div>
+    </div>
+    <!-- 用户未登录  重要不能删除-->
+    <!-- <div class="top-navbar-right no-login">
+        <a href="#"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
+    </div> -->
+</div>
 
+<!-- 主体内容区域 -->
+
+<router-outlet></router-outlet>
+
+<!-- 底部区域 -->
+<div class="footer bs-footer footer-bar">
+    <div class="container">
+        <ul>
+            <li><a href="about/1" title="联系我们">联系我们</a></li>
+            <li><a href="about/2" title="关于我们">关于我们</a></li>
+            <li><a href="about/3" title="协议条款">协议条款</a></li>
+            <li><a href="about/4" title="友情链接">友情链接</a></li>
+        </ul>
+        <p>
+            Powered by <a routerLink="home" target="_blank">拍拍秀</a>
+        </p>
+    </div>
+</div>
