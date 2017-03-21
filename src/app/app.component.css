@@ -1,5 +1,8 @@
  /* 导航栏 */
-
+*{
+	margin: 0;
+	padding: 0;
+}
 .top-navbar{
 	padding:0 200px 0 250px;
 	background-color:#15293a;
@@ -64,12 +67,12 @@
 	position: absolute;
     right: 165px;
     top: 60px;
-    width: 115px;
+    width: 104px;
     /* visibility: hidden; */
     box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
     z-index: 1000;
     background-color:#fff;
-    height:163px;
+    height:150px;
     padding:10px 0;
 }
 .g-user-card>.item{
@@ -78,8 +81,7 @@
     line-height: 1.75;
     padding: 0.5em 1.5em !important;
     text-decoration:none;
-    width:115px;
-    text-align: center;
+    width:104px;
     display: block;
 }
 .g-user-card>.item:hover{
