@@ -177,6 +177,18 @@ a:hover{
 .section-title {
   margin:50px 0;
 }
+.section-type {
+  background:  	#EDEDED;
+	color: #E3890A;
+	padding: 5px;
+ 	font-size: 15px;
+ 	text-align: right;
+}
+
+.section-type-left {
+	float: left;
+}
+
 .section-main {
   text-align: center;
   padding-bottom: 120px;
