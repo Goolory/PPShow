@@ -1,8 +1,5 @@
  /* 导航栏 */
-*{
-	margin: 0;
-	padding: 0;
-}
+
 .top-navbar{
 	padding:0 200px 0 250px;
 	background-color:#15293a;
