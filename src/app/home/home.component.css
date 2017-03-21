@@ -140,6 +140,7 @@ a:hover{
 .section-bg {
 	/* background: #eaf4eb ; */
 	margin-top: 100px;
+	border-top: 1px solid #d0d6d9;
 }
 
 #container {
