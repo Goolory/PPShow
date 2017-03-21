@@ -2,11 +2,22 @@
 
 .top-navbar{
 	padding:0 200px 0 250px;
-	background-color:#15293a;
+	/* background-color:#15293a; */
+	background: #333 url('../assets/images/bg.jpg') repeat top left;
 	height:60px;
 	font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
-	min-width:1000px;
+	min-width:1100px;
 	width:auto !important;
+}
+.top-navbar a{
+	color:#ddca7d;
+}
+.rop-show{
+	background:#15293a;
+	color:#fff;
+}
+.rop-move{
+	background: #333 url('../assets/images/bg.jpg') repeat top left;
 }
 .top-navbar-header{
 	float:left;
@@ -38,9 +49,22 @@
 	line-height:60px;
 	display:inline-block;
 	text-decoration:none;
-	width:120px;
+	width:100px;
 	text-align:center;
-	color:#dfebe1;
+	/* color:#000; */
+}
+#course-card{
+	position: absolute;
+    /* right: 165px; */
+    top: 60px;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+    z-index: 1000;
+    background: #333 url('../assets/images/bg.jpg') repeat top left;
+    padding:0;
+}
+#course-card .item:hover{
+	/* background-color:#31495d; */
 }
 #top-navbar-right{
 	display:inline-block;
@@ -49,11 +73,10 @@
 
 }
 
-#top-navbar-right>img:hover{
-	border:2px solid red;
-}
+
 .top-navbar-list li a:hover{
-	background-color:#31495d;
+	/* background: #333 url('../assets/images/bg.jpg') repeat top left; */
+	background:#000;
 }
 
 
@@ -68,7 +91,7 @@
     /* visibility: hidden; */
     box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
     z-index: 1000;
-    background-color:#fff;
+    background: #333 url('../assets/images/bg.jpg') repeat top left;
     padding:10px 0;
 }
 .g-user-card>.item{
@@ -95,7 +118,10 @@
 .top-navbar-right a img{
 	display:inline-block;
 	border-radius:50%;
-	border:1px solid red;
+	border:2px solid red;
+}
+#top-navbar-right>img:hover{
+	border:3px solid red;
 }
 .no-login>a{
 	display:block;

@@ -1,15 +1,30 @@
 <!-- 顶部导航 -->
-<div class="top-navbar navbar-fixed-top">
+<div class="top-navbar navbar-fixed-top" id="top-navbar">
     <div class="top-navbar-list">
         <ul class="">
             <li>
                 <a routerLink="home">首页</a>
             </li>
-            <li>
-                <a routerLink="course">课件区</a>
+            <li (mouseenter)="enterCourse()" (mouseleave)="enterCourse()">
+                <a href="javascript:;">教学区</a>
+                <div id="course-card" *ngIf="showCourse">
+                    <a routerLink="course" class="item">课件区</a>
+                    <a href="#" class="item">试卷区</a>
+                    <a href="#" class="item">作业区</a>
+                </div>
+            </li>
+            <li (mouseenter)="enterPic()" (mouseleave)="enterPic()">
+                <a routerLink="exam">贴图区</a>
+                <div id="course-card" *ngIf="showPic">
+                    <a routerLink="course" class="item">风光摄影</a>
+                    <a href="#" class="item">人像摄影</a>
+                    <a href="#" class="item">静物摄影</a>
+                    <a href="#" class="item">人文摄影</a>
+                    <a href="#" class="item">创意摄影</a>
+                </div>
             </li>
             <li>
-                <a routerLink="exam">试卷区</a>
+                <a routerLink="forum">作品区</a>
             </li>
             <li>
                 <a routerLink="forum">讨论区</a>
@@ -23,7 +38,7 @@
     </div>
     <!-- 用户已登录 -->
     <div class="top-navbar-right">
-        <div  (mouseenter)="fooEnter()" (mouseleave)="fooOut()">
+        <div  (mouseenter)="fooEnter()" (mouseleave)="fooEnter()">
             <a id="top-navbar-right" href="#" style="color: red">&nbsp;&nbsp;<img src="../assets/images/logo.jpg" width="40" height="40"></a>
                 <div class="g-user-card" *ngIf="showTimes">
                     <a href="#" class="item"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;用户信息</a>

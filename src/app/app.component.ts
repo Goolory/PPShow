@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -7,17 +8,34 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	public showTimes;
+	public showCourse;
+	public showPic;
 
 	constructor() { 
-  	this.showTimes = null
+  	this.showTimes = false;
+  	this.showCourse = false;
+  	this.showPic = false;
   }
 	ngOnInit(){
-
+		$(()=>{
+			$(document).scroll(function(){
+				let top = $("#top-navbar");
+                let topHeight = top.offset().top;
+                    if(topHeight > 20){
+                    	top.addClass("rop-show");
+                    }else{
+                    	top.removeClass("rop-show");
+                    }
+            });
+		})
 	}
 	public fooEnter(){
-		this.showTimes = true;
+		this.showTimes =! this.showTimes;
 	}
-	public fooOut(){
-		this.showTimes = false;
+	public enterCourse(){
+		this.showCourse =! this.showCourse;
+	}
+	public enterPic(){
+		this.showPic =! this.showPic;
 	}
 }
