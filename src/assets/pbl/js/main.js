@@ -1,19 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-declare var $: any;
-
-@Component({
-  selector: 'app-album',
-  templateUrl: './album.component.html',
-  styleUrls: ['./album.component.css','../../assets/pbl/css/animate.css','../../assets/pbl/css/magnific-popup.css'
-  			,'../../assets/pbl/css/salvattore.css','../../assets/pbl/css/style.css']
-})
-export class AlbumComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  	(function () {
-
+;(function () {
+	
+	'use strict';
 
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -111,7 +98,3 @@ export class AlbumComponent implements OnInit {
 
 
 }());
-  	
-  }
-
-}
