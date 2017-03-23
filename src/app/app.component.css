@@ -2,8 +2,7 @@
 
 .top-navbar{
 	padding:0 200px 0 250px;
-	/* background-color:#15293a; */
-	background: #333 url('../assets/images/bg.jpg') repeat top left;
+	background: url('../assets/images/bg.jpg') repeat top left;
 	height:60px;
 	font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
 	min-width:1100px;
@@ -13,11 +12,11 @@
 	color:#000;
 }
 .rop-show{
-	background:#333 url('../assets/images/bg2.jpg') repeat top left;
+	background:url('../assets/images/bg2.jpg') repeat top left;
 	color:#fff;
 }
 .rop-move{
-	background: #333 url('../assets/images/bg.jpg') repeat top left;
+	background:url('../assets/images/bg.jpg') repeat top left;
 }
 .top-navbar-header{
 	float:left;
@@ -51,20 +50,15 @@
 	text-decoration:none;
 	width:100px;
 	text-align:center;
-	/* color:#000; */
 }
 #course-card{
 	position: absolute;
-    /* right: 165px; */
     top: 60px;
     width: 100px;
     box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
     z-index: 1000;
-    background: #333 url('../assets/images/bg2.jpg') repeat top left;
+    background:url('../assets/images/bg2.jpg') repeat top left;
     padding:0;
-}
-#course-card .item:hover{
-	/* background-color:#31495d; */
 }
 #top-navbar-right{
 	display:inline-block;
@@ -88,10 +82,9 @@
     right: 165px;
     top: 60px;
     width: 115px;
-    /* visibility: hidden; */
     box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
     z-index: 1000;
-    background: #333 url('../assets/images/bg2.jpg') repeat top left;
+    background:url('../assets/images/bg2.jpg') repeat top left;
     padding:10px 0;
 }
 .g-user-card>.item{
@@ -130,10 +123,11 @@
 	width:80px;
 	text-decoration: none;
 	text-align: center;
-	color:#dfebe1;
+	color:#000;
 }
 .no-login>a:hover{
 	background-color:#31495d;
+	color:#fff;
 }
 
 /* end导航栏 */

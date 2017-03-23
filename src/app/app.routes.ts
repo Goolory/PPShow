@@ -1,6 +1,7 @@
 import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component'
 
 export const appRoutes = [
 	{
@@ -10,6 +11,9 @@ export const appRoutes = [
 	},{
 		path:'home',
 		component:HomeComponent
+	},{
+		path:'login',
+		component:LoginComponent
 	},{
 		path:'course',
 		loadChildren:'./course/course.module#CourseModule'

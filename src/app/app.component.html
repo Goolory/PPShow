@@ -37,7 +37,7 @@
         </a>
     </div>
     <!-- 用户已登录 -->
-    <div class="top-navbar-right">
+    <!-- <div class="top-navbar-right">
         <div  (mouseenter)="fooEnter()" (mouseleave)="fooEnter()">
             <a id="top-navbar-right" href="#" style="color: red">&nbsp;&nbsp;<img src="../assets/images/logo.jpg" width="40" height="40"></a>
                 <div class="g-user-card" *ngIf="showTimes">
@@ -47,11 +47,11 @@
                     <a href="#" class="item"><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;登出</a>
                 </div>
         </div>
-    </div>
-    <!-- 用户未登录  重要不能删除-->
-    <!-- <div class="top-navbar-right no-login">
-        <a href="#"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
     </div> -->
+    <!-- 用户未登录  重要不能删除-->
+    <div class="top-navbar-right no-login">
+        <a href="login"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
+    </div>
 </div>
 
 <!-- 主体内容区域 -->

@@ -1,3 +1,53 @@
-<p style="margin-top: 100px;">
-  album-add works!
-</p>
+<div class="album-add container wow bounceInDown">
+    <div class="ablum-add-title"><i class="glyphicon glyphicon-tag"></i>&nbsp;&nbsp;&nbsp;贴图 <i class="glyphicon glyphicon-menu-right"></i>风光射影</div>
+    <div class="form-horizontal album-data">
+        <div class="form-group">
+            <label for="addTitle" class="col-sm-2 control-label form-item form-item-max">标题<i>*</i></label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" id="addTitle">
+            </div>
+            <span class="col-sm-2 control-label"><i>*</i>&nbsp;&nbsp;为必填项</span>
+        </div>
+        <div class="form-group">
+            <label for="addPhone" class="col-sm-2 control-label form-item form-item-max">拍摄工具<i>*</i></label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="addPhone">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="addTool" class="col-sm-2 control-label form-item">修图软件</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control " id="addTool">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="addPlace" class="col-sm-2 control-label form-item">拍摄地点</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="addPlace">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="addTime" class="col-sm-2 control-label form-item">拍摄时间</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="addTime">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="addNote" class="col-sm-2 control-label form-item">简介</label>
+            <div class="col-sm-4">
+                <textarea class="form-control" rows="3" id="addNote"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 提交图片 -->
+    <div class=" kv-main " style="padding: 0 50px">
+        <form enctype="multipart/form-data">
+            <div class="form-group">
+                <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+            </div>
+        </form>
+    </div>
+    <div class="album-add-btn"><button class="btn btn-primary" id="uploadImg">确认</button></div>
+</div>

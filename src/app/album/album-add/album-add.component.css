@@ -1,0 +1,54 @@
+/*!
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
+ * @package bootstrap-fileinput
+ * @version 4.1.8
+ *
+ * File input styling for Bootstrap 3.0
+ * Built for Yii Framework 2.0
+ * Author: Kartik Visweswaran
+ * Year: 2015
+ * For more Yii related demos visit http://demos.krajee.com
+ */
+ /* #0480be */
+ /* #d9edf7 */
+ .album-add{
+    margin-top:100px;
+    margin-bottom:100px;
+    padding:0;
+    /* height:500px; */
+    background-color:#fff;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+    border-radius:10px;
+ }
+ .ablum-add-title{
+	background-color: #0480be;
+	padding:0 30px;
+	line-height:40px;
+	font-weight:bold;
+	margin-bottom: 30px;
+	border-radius:10px 10px 0 0;
+ }
+ .album-data{
+    color:#000;
+    margin-bottom:50px;
+ }
+ .form-item-max{
+ 	position:relative;
+ 	right:-7px;
+ }
+ .form-group i{
+ 	color:red;
+ }
+ .form-group span{
+	text-align:left;
+ }
+ .form-item i{
+ 	position:relative;
+ 	right:-12px;
+ }
+.album-add-btn{
+	background-color:#d9edf7;
+	line-height:60px;
+	padding-left:80%;
+	border-radius:0 0 10px 10px;
+}
