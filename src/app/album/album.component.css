@@ -1,0 +1,73 @@
+#fh5co-main {
+	background-color: #A9A9A9;
+	/* font-family : 黑体; */
+	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+#fh5co-board {
+margin:100px;
+-webkit-column-count: 4;
+-moz-column-count: 4;
+column-count: 4;
+-moz-column-gap:20px;
+-webkit-column-gap:20px;
+column-gap:20px;
+
+/* column-break-inside  : true; */
+padding: 10px;
+}
+.row {
+	text-align: center;
+}
+.item {
+-webkit-column-break-inside: avoid;
+page-break-inside: avoid;
+break-inside: avoid;
+}
+.fh5co-desc {
+	color: black;
+/* background-color: black; */
+}
+
+#fh5co-board .item { 
+	margin: 0px 10px 5px 10px; 
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px; 
+	-ms-border-radius: 4px; 
+	border-radius: 4px; 
+	overflow: hidden;
+	/* border:20px solid transparent; */
+	/* -webkit-border-image:url('../../assets/images/albumborder.jpg') 30 30 round; /* Safari 5 */
+	/* -o-border-image:url('../../assets/images/albumborder.jpg') 30 30 round; /* Opera */
+	/* border-image:url('../../assets/images/albumborder.jpg') 30 30 round; */
+	}
+
+	.item-tag {
+		color: black;
+		padding:10px 10px;
+		text-align: left ;
+	}
+
+	/* .item-tag i {
+		width: 50px;
+		float: left;
+	} */
+	.item-tag-love {
+		float: right;
+		/* display: none; */
+		/* font-size: 20px; */
+		/* color: red; */
+		color: red;
+	}
+	.item-tag-love-empty {
+		float: right;
+		font-size: 18px;
+		/* display: none; */
+		/* color: red; */
+	}
+	.item-tag-eye {
+		float: right;
+		margin-right: 10px;
+		/* font-size: 20px; */
+		/* color: red; */
+	}
