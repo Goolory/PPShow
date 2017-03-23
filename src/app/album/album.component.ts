@@ -4,16 +4,28 @@ declare var $: any;
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',
-  styleUrls: ['./album.component.css','../../assets/pbl/css/animate.css','../../assets/pbl/css/magnific-popup.css'
-  			,'../../assets/pbl/css/salvattore.css','../../assets/pbl/css/style.css']
+  styleUrls: ['../../assets/pbl/css/animate.css','../../assets/pbl/css/magnific-popup.css'
+  			,'../../assets/pbl/css/salvattore.css','../../assets/pbl/css/style.css','./album.component.css']
 })
 export class AlbumComponent implements OnInit {
+public loved;
+public loveCount;
+  constructor() {
+  this.loved = [false,false];
+  this.loveCount = [0,0]; 
+}
 
-  constructor() { }
-
+	public lovedEnter(i:any){
+		this.loved[i] = true;
+		this.loveCount[i] ++;
+	}
   ngOnInit() {
-  	(function () {
+  	// this.loved = false;
+ 
 
+ (function () {
+	
+	'use strict';
 
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -103,14 +115,17 @@ export class AlbumComponent implements OnInit {
 
 	
 	$(function(){
+		$(window).scrollTop(0);
 		magnifPopup();
 		offCanvass();
 		mobileMenuOutsideClick();
-		animateBoxWayPoint();
+		// animateBoxWayPoint();
 	});
+	$()
 
 
 }());
+
   	
   }
 
