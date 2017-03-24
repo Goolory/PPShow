@@ -10,11 +10,13 @@ export class AppComponent {
 	public showTimes;
 	public showCourse;
 	public showPic;
+	public doLogin;
 
 	constructor() { 
   	this.showTimes = false;
   	this.showCourse = false;
   	this.showPic = false;
+  	this.doLogin = false;
   }
 	ngOnInit(){
 		$(()=>{

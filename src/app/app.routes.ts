@@ -12,9 +12,6 @@ export const appRoutes = [
 		path:'home',
 		component:HomeComponent
 	},{
-		path:'login',
-		component:LoginComponent
-	},{
 		path:'course',
 		loadChildren:'./course/course.module#CourseModule'
 	},{
