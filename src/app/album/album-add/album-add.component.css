@@ -28,6 +28,9 @@
 	margin-bottom: 30px;
 	border-radius:10px 10px 0 0;
  }
+ .ablum-add-title>i{
+ 	top:3px;
+ }
  .album-data{
     color:#000;
     margin-bottom:50px;
