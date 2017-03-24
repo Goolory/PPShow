@@ -1,0 +1,23 @@
+.pbl-container {
+	padding-top: 100px;
+	background: url('../../../assets/images/albumlistborder.png')  repeat top left;
+	width: 100%;
+}
+.container a{
+	text-decoration: none;
+}
+
+.container i{
+	top: 2px;
+}
+.thumbnail {
+	background: rgb(255,255,240);
+}
+.item-title {
+	color: black;
+	width:90%; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;
+}
+.paging-control {
+	text-align: center;
+	padding: 100px 0 50px 0;
+}

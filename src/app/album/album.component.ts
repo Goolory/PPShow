@@ -4,8 +4,8 @@ declare var $: any;
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',
-  styleUrls: ['../../assets/pbl/css/animate.css','../../assets/pbl/css/magnific-popup.css'
-  			,'../../assets/pbl/css/salvattore.css','../../assets/pbl/css/style.css','./album.component.css']
+  styleUrls: ['../../assets/pbl/css/magnific-popup.css'
+  			,'../../assets/pbl/css/salvattore.css','./album.component.css']
 })
 export class AlbumComponent implements OnInit {
 public loved;
