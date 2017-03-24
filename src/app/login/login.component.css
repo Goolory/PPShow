@@ -1,4 +1,11 @@
-.user-login-container{
+.user-login{
 	color:#000;
-	margin-top:100px;
+	margin:100px 10%;
+	/* padding-bottom:50px; */
+}
+.user-panel{
+	padding:30px 5% 30px;
+}
+.form-item{
+	margin:10px 0;
 }
