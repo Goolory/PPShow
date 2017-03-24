@@ -50,9 +50,11 @@
     </div> -->
     <!-- 用户未登录  重要不能删除-->
     <div class="top-navbar-right no-login">
-        <a href="login"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
+        <a href="javascript:;" (click)="doLogin=!doLogin"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
     </div>
 </div>
+<!-- 登录 -->
+<app-login *ngIf="doLogin" (doLogin)="doLogin=!doLogin"></app-login>
 
 <!-- 主体内容区域 -->
 
