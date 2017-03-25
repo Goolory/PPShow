@@ -1,20 +1,28 @@
 .pbl-container {
-	padding-top: 100px;
+	padding-top: 60px;
 	background: url('../../../assets/images/albumlistborder.png')  repeat top left;
 	width: 100%;
+}
+.pbl-container i{
+	top: 2px;
+}
+.album-list-title {
+	text-align: center;
+	margin: 20px;
+	color: black;
+	opacity: 0.6;
+	font-size: 30px;
 }
 .container a{
 	text-decoration: none;
 }
 
-.container i{
-	top: 2px;
-}
 .thumbnail {
 	background: rgb(255,255,240);
 }
 .item-title {
 	color: black;
+	opacity: 0.9;
 	width:90%; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;
 }
 .paging-control {

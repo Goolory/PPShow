@@ -7,8 +7,11 @@ declare var $: any;
   styleUrls: ['./album-list.component.css']
 })
 export class AlbumListComponent implements OnInit {
+	public doDetail;
 
-  constructor() { }
+  constructor() { 
+  	this.doDetail = false;
+  }
 
   ngOnInit() {
   $("#my-gallery-container").mpmansory(
