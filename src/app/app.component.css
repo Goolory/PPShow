@@ -14,6 +14,7 @@
 .rop-show{
 	background:url('../assets/images/bg2.jpg') repeat top left;
 	color:#fff;
+	box-shadow: 0 5px 5px rgba(10,10,10,.3);
 }
 .rop-move{
 	background:url('../assets/images/bg.jpg') repeat top left;
