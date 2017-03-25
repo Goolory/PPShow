@@ -1,4 +1,4 @@
-.login-back{
+.detail-back{
 	z-index:1000;
 	position:fixed;
 	top:0;
@@ -11,13 +11,12 @@
 	opacity:0.5;
 	width:100%;
 	height:100%;
-
 }
-.user-login{
+.picture-detail{
 	color:#000;
-	margin:100px 35%;
+	width: 35%;
 	min-width: 400px;
-	width: 30%;
+	margin:100px 30% ;
 	z-index:2000;
 	position:absolute;
 	position:fixed;
@@ -30,4 +29,10 @@
 	text-decoration:none;
 	margin-top:-10px;
 	color:#3e3e3e;
+}
+.detail-dec {
+	
+}
+.detail-zan {
+
 }
