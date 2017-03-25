@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 declare var $: any;
-declare var WOW: any;
 
 @Component({
   selector: 'app-home',
@@ -18,15 +17,6 @@ export class HomeComponent implements OnInit {
 				autoplay	:	true
 			});
 		});
-		// wow动态载入函数部分
-		var wow = new WOW({
-        animateClass: 'animated',
-        offset: 100,
-        callback: function(box) {
-          // console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      });
-    wow.init();
     
   }
 

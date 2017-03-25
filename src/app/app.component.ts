@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 declare var $: any;
+declare var WOW: any;
 
 @Component({
   selector: 'app-root',
@@ -29,7 +30,16 @@ export class AppComponent {
                     	top.removeClass("rop-show");
                     }
             });
-		})
+		});
+		// wow动态载入函数部分
+		var wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
+        callback: function(box) {
+          // console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      });
+    wow.init();
 	}
 	public fooEnter(){
 		this.showTimes =! this.showTimes;
@@ -40,4 +50,5 @@ export class AppComponent {
 	public enterPic(){
 		this.showPic =! this.showPic;
 	}
+
 }
