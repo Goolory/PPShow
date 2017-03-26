@@ -37,21 +37,19 @@
         </a>
     </div>
     <!-- 用户已登录 -->
-    <!-- <div class="top-navbar-right">
+    <div class="top-navbar-right">
         <div  (mouseenter)="fooEnter()" (mouseleave)="fooEnter()">
             <a id="top-navbar-right" href="#" style="color: red">&nbsp;&nbsp;<img src="../assets/images/logo.jpg" width="40" height="40"></a>
                 <div class="g-user-card" *ngIf="showTimes">
-                    <a href="#" class="item"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;用户信息</a>
-                    <a href="#" class="item"><i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;用户消息</a>
-                    <a href="#" class="item"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;个人设置</a>
+                    <a href="mypage" class="item"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;个人主页</a>
                     <a href="#" class="item"><i class="glyphicon glyphicon-log-out"></i>&nbsp;&nbsp;登出</a>
                 </div>
         </div>
-    </div> -->
-    <!-- 用户未登录  重要不能删除-->
-    <div class="top-navbar-right no-login">
-        <a href="javascript:;" (click)="doLogin=!doLogin"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
     </div>
+    <!-- 用户未登录  重要不能删除-->
+    <!-- <div class="top-navbar-right no-login">
+        <a href="javascript:;" (click)="doLogin=!doLogin"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;登录</a>
+    </div> -->
 </div>
 <!-- 登录 -->
 <app-login *ngIf="doLogin" (doLogin)="doLogin=!doLogin"></app-login>

@@ -1,3 +1,238 @@
-<p>
-  mypage works!
-</p>
+<div class="container-fluid web-body">
+    <div class="row user-info">
+        <div class="container">
+            <div class="row main-user" style="height: 100px">
+                <div class="col-md-2 col-md-offset-1 col-xs-3">
+                    <img src="assets/images/logo.jpg" height="80" width="80" class="img-circle avatar">
+                </div>
+                <div class="col-md-5 col-xs-9">
+                    <div class="right-user">
+                        <h2 style="float: left;margin-top: 22px">小明</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container user-mian">
+        <div class="tabbable-panel">
+            <div class="tabbable-line">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#userInfo" aria-controls="userInfo" role="tab" data-toggle="tab">个人资料</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">修改密码</a></li>
+                    <li role="presentation"><a href="#message" aria-controls="message" role="tab" data-toggle="tab">消息记录<span class="badge">4</span></a></li>
+                    <li role="presentation"><a href="#pictures" aria-controls="pictures" role="tab" data-toggle="tab">我的图片</a></li>
+                    <!-- 试卷区，学生 -->
+                    <li role="presentation"><a href="#paper" aria-controls="paper" role="tab" data-toggle="tab">我的试卷</a></li>
+                    <!-- <li role="presentation"><a href="#paper" aria-controls="paper" role="tab" data-toggle="tab">我的试卷</a></li> -->
+                </ul>
+            </div>
+            <div class="tab-content">
+                <!-- 个人信息----学生，教师 -->
+                <div role="tabpanel" class="tab-pane active" id="userInfo">
+                    <div class="panel-heading">
+                        <h3 class="header">基本资料</h3>
+                    </div>
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="addTitle" class="col-sm-2 control-label">姓名：</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" value="小明" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="addTitle" class="col-sm-2 control-label">账号：</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" value="123423423" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="addTitle" class="col-sm-2 control-label">学校类型：</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" value="小学" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="addTitle" class="col-sm-2 control-label">学校：</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" value="南昌小学" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="addTitle" class="col-sm-2 control-label">年级：</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" value="三年级" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="addTitle" class="col-sm-2 control-label">班级：</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" value="4班" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="addTitle" class="col-sm-2 control-label">职务：</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" value="班长" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 修改密码----学生，教师 -->
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="panel-heading">
+                        <h3 class="header">修改密码</h3>
+                    </div>
+                    <div class="form-horizontal" style="margin-top:50px">
+                        <div class="form-group">
+                            <label for="oldPassword" class="col-sm-2 control-label">原密码：</label>
+                            <div class="col-sm-4">
+                                <input type="password" name="oldPassword" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword" class="col-sm-2 control-label">新密码：</label>
+                            <div class="col-sm-4">
+                                <input type="password" name="newPassword" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-success">提交修改</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 消息记录----学生，教师 -->
+                <div role="tabpanel" class="tab-pane" id="message">
+                    <div class="panel-heading">
+                        <h3 class="header">消息记录</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="media message-list">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="assets/images/person1.jpg" width="64" height="64"></a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">李老师&nbsp;&nbsp;&nbsp;<small>2017-3-5 </small></h4> 大家把今天的作业交上来
+                                </div>
+                            </div>
+                            <div class="media message-list">
+                                <div class="media-left">
+                                    <a href="#"><img class="media-object" src="assets/images/person1.jpg" width="64" height="64"></a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">李老师&nbsp;&nbsp;&nbsp;<small>2017-3-5 </small></h4> 大家把今天的作业交上来
+                                </div>
+                            </div>
+                            <!-- 分页 -->
+                            <div class="paging-control">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 展示已上传的图片--学生，教师-->
+                <div role="tabpanel" class="tab-pane" id="pictures">
+                    <div class="panel-heading">
+                        <h3 class="header">我的图片</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="assets/images/person1.jpg">
+                                <div class="caption">
+                                    <h4>只是一张图</h4>
+                                    <p>发布时间：2017-2-2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <img src="assets/images/person1.jpg">
+                                <div class="caption">
+                                    <h4>只是一张图</h4>
+                                    <p>发布时间：2017-2-2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 分页 -->
+                    <div class="paging-control">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- 做过的试卷--只学生 -->
+                <div role="tabpanel" class="tab-pane" id="paper">
+                    <div class="panel-heading">
+                        <h3 class="header">我的试卷</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 paper-table">
+                            <table class="table table-hover">
+                                <thead>
+                                	<th>试卷</th>
+                                	<th>授课老师</th>
+                                	<th>上交时间</th>
+                                </thead>
+                                <tbody>
+                                	<tr>
+                                		<td>人像摄影</td>
+                                		<td>李老师</td>
+                                		<td>2017-3-5</td>
+                                	</tr>
+                                	<tr>
+                                		<td>人像摄影</td>
+                                		<td>李老师</td>
+                                		<td>2017-3-5</td>
+                                	</tr>
+                                	<tr>
+                                		<td>人像摄影</td>
+                                		<td>李老师</td>
+                                		<td>2017-3-5</td>
+                                	</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
