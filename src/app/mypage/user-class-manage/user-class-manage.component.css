@@ -1,0 +1,23 @@
+.addStudentBack{
+	z-index:1000;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	margin:auto;
+	background-color:#000;
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	opacity:0.5;
+	width:100%;
+	height:100%;
+}
+.add-student-panel{
+	background-color: #fff;
+    width: 30%;
+    z-index: 1010;
+    position: absolute;
+    top: 200px;
+    left: 35%;
+	box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+}

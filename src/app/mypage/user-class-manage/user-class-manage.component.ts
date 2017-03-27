@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-class-manage.component.css']
 })
 export class UserClassManageComponent implements OnInit {
-
-  constructor() { }
+	public addStudent : boolean;
+  constructor() { 
+  	this.addStudent = false;
+  }
 
   ngOnInit() {
   }
 
+  public removeAddPanel(){
+  	this.addStudent =! this.addStudent;
+  }
 }
