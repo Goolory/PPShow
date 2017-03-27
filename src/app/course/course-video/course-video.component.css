@@ -1,0 +1,36 @@
+.video-div {
+	margin: auto;
+	margin-top: 60px;
+	width: 1100px;
+}
+.breadcrumb {
+	background: url('../../assets/images/bg.jpg');
+}
+.videoplay {
+	text-align: center;
+	color: #8a6d3b;
+	height: 520px;
+}
+#danmup {
+	display: inline-block;
+	float: left;
+}
+.video-list {
+	width: 280px;
+	height: 520px;
+	margin-left: 10px;
+	display: inline-block;
+	float: left;
+}
+.course-material {
+	margin: 30px;
+	border-top: #777 solid 1px;
+	padding: 0 0 100px 0;
+	color: #777;
+}
+.course-material h3{
+	/* display: inline-block; */
+}
+.course-material p{
+	font-size: 20px;
+}

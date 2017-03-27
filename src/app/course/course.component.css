@@ -1,0 +1,54 @@
+.course-list {
+	margin: auto;
+	margin-top: 60px;
+	width: 1100px;
+}
+.list-classify {
+	background: url('../../assets/images/bg.jpg');
+}
+.breadcrumb {
+	background: url('../../assets/images/bg.jpg');
+
+}
+.list-list a{
+	text-align: center;
+	text-decoration: none;
+}
+.list-list a:hover{
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-o-opacity:0.6;
+	opacity: 0.6;
+	color: red;
+}
+.panel-img {
+	display: inline-block;
+	width: 260px;
+	height: 170px;
+	overflow: hidden;
+	float: left;
+}
+.panel-body img {
+	width: 100%;
+}
+.panel-detail {
+	text-align: left;
+	display: inline-block;
+	float: left;
+	color: #3d3d4b;
+	padding-left: 30px;
+	width: 800px;
+}
+.detail-intro {
+  display: -webkit-box;  
+  display: -moz-box;  
+  overflow: hidden;  
+  text-overflow: ellipsis;  
+  word-break: break-all;  
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp:3;
+  height:61px; 
+}
+.paging-control {
+	text-align: center;
+}
