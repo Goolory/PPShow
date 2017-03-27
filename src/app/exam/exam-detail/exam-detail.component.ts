@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-declare var $: any;
+declare var $:any;
+
 @Component({
-  selector: 'app-forum-detail',
-  templateUrl: './forum-detail.component.html',
-  styleUrls: ['./forum-detail.component.css']
+  selector: 'app-exam-detail',
+  templateUrl: './exam-detail.component.html',
+  styleUrls: ['./exam-detail.component.css']
 })
-export class ForumDetailComponent implements OnInit {
+export class ExamDetailComponent implements OnInit {
 
   constructor() { }
 

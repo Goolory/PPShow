@@ -1,0 +1,66 @@
+.web-body{
+	margin-top:5px;
+	margin-bottom:100px;
+	color:#000;
+	background: url('../../assets/images/forumbg.jpg');
+	border-radius:10px;
+	box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+	min-height: 700px;
+}
+.list-classify {
+	margin: auto;
+	margin-top: 60px;
+	width: 1100px;
+}
+.breadcrumb {
+	background: url('../../assets/images/bg.jpg');
+}
+.web-body h3 {
+	text-align: center;
+}
+.panel{
+	margin-top:20px;
+	box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+	border-radius:10px;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.web-body .content{
+	min-height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    overflow: auto;
+}
+.page-header{
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+.discuss .author{
+	color: #999;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 10px;
+}
+.answer-list{
+	border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.stem-img {
+	width: 300px;
+	max-height: 300px;
+	margin-bottom: 3px;
+}
+.stem-title p {
+	margin-left: 10px;
+	display: inline-block;
+	width: 60%;
+}
+.forum-btn{
+	line-height:50px;
+	float:right;
+}
