@@ -1,0 +1,17 @@
+.about-us{
+	background-color:#fff;
+}
+.about-header{
+	text-align:center;
+	border-bottom: 1px solid #edf1f2;
+}
+.about-header h2{
+	margin-top:0;
+	line-height:80px;
+}
+.about-body{
+	padding-top:100px;
+	min-height:600px;
+	color: #656e73;
+	box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+}
