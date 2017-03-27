@@ -32,6 +32,10 @@
 .panel-heading img {
 	width: 100%;
 }
+.head-top {
+	width: 100%;
+	height: 180px;
+}
 .panel-detail {
 	text-align: left;
 	display: inline-block;
@@ -52,5 +56,6 @@
 }
 
 .ul-title {
+	display: left;
 	text-align: center;
 }
