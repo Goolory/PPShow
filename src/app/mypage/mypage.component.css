@@ -1,0 +1,41 @@
+.web-body{
+	margin-top:100px;
+	margin-bottom: 100px;
+	/* background-color:#e3e3e3; */
+	color:#000;
+}
+.user-info{
+	
+    border-bottom: 1px solid #ddd;
+}
+.user-mian{
+	background-color: #FAFAFA;
+	padding-top:30px;
+	padding-bottom:80px;
+	border-radius:10px;
+	box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+	min-height:500px;
+}
+.header{
+	border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.badge{
+	background-color: red;
+    position: absolute;
+    top: 1px;
+    right: -4px;
+}
+
+.message-list{
+	padding:20px 0;
+	border-bottom: 1px solid #ddd;
+}
+.paging-control{
+	text-align: center;
+}
+/* 试卷 */
+.paper-table th{
+	margin-left:20px;
+}

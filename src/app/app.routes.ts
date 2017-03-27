@@ -26,6 +26,9 @@ export const appRoutes = [
 	},{
 		path:'album',
 		loadChildren:'./album/album.module#AlbumModule'
+	},{
+		path:'mypage',
+		loadChildren:'./mypage/mypage.module#MypageModule'
 	}
 	// ,{
 	// 	path:'**',//fallback router must in the last
