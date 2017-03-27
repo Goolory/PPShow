@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-forum',
@@ -10,6 +11,7 @@ export class ForumComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	$(function(){ $(window).scrollTop(0)});
   }
 
 }
