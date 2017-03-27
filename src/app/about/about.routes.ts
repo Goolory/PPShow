@@ -1,5 +1,4 @@
 import { RouterModule } from '@angular/router';
-import { AboutComponent } from './about.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AgreementComponent } from './agreement/agreement.component';
@@ -15,7 +14,7 @@ export const aboutRoutes = [
 			{ path: 'us', component:AboutUsComponent},
       		{ path: 'contact', component:ContactUsComponent},
       		{ path: 'agreement', component:AgreementComponent},
-      		{ path: 'link', component:LinkComponent}
+      		{ path: 'link', component:LinkComponent},
       		{ path: '**', redirectTo:'us' }
 		]
 	}
