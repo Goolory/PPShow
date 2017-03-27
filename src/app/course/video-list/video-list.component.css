@@ -29,7 +29,7 @@
 	overflow: hidden;
 	float: left;
 }
-.panel-body img {
+.panel-heading img {
 	width: 100%;
 }
 .panel-detail {
@@ -50,6 +50,7 @@
   -webkit-line-clamp:3;
   height:61px; 
 }
-.paging-control {
+
+.ul-title {
 	text-align: center;
 }
