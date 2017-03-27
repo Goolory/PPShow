@@ -7,6 +7,9 @@ import { UserPwdComponent } from './user-pwd/user-pwd.component';
 import { UserMessagesComponent } from './user-messages/user-messages.component';
 import { UserPaperComponent } from './user-paper/user-paper.component';
 import { UserClassManageComponent } from './user-class-manage/user-class-manage.component';
+import { UserTeacherComponent } from './user-teacher/user-teacher.component';
+import { UserPictureComponent } from './user-picture/user-picture.component';
+import { UserAddPaperComponent } from './user-add-paper/user-add-paper.component';
 
 @NgModule({
   imports: [
@@ -15,6 +18,6 @@ import { UserClassManageComponent } from './user-class-manage/user-class-manage.
     	{ path: '', component: MypageComponent},
     ])
   ],
-  declarations: [MypageComponent, UserInfoComponent, UserPwdComponent, UserMessagesComponent, UserPaperComponent, UserClassManageComponent]
+  declarations: [MypageComponent, UserInfoComponent, UserPwdComponent, UserMessagesComponent, UserPaperComponent, UserClassManageComponent, UserTeacherComponent, UserPictureComponent, UserAddPaperComponent]
 })
 export class MypageModule { }

@@ -1,0 +1,76 @@
+<div class="panel-heading">
+    <h3 class="header">教学管理</h3>
+</div>
+<div class="col-md-10 col-md-offset-1">
+    <ul id="myTab" class="nav nav-pills nav-justified">
+        <li class="active">
+            <a href="#test" data-toggle="tab">
+            试卷
+        </a>
+        </li>
+        <li><a href="#homework" data-toggle="tab">作业</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="test">
+            <div class="pull-right"><a href="javascritp:;" (click)="addPaper=!addPaper" class="btn btn-success">添加试卷</a></div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>试卷</th>
+                        <th>出卷老师</th>
+                        <th>上交时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>人像摄影</td>
+                        <td>李老师</td>
+                        <td>2017-3-5</td>
+                    </tr>
+                    <tr>
+                        <td>人像摄影</td>
+                        <td>李老师</td>
+                        <td>2017-3-5</td>
+                    </tr>
+                    <tr>
+                        <td>人像摄影</td>
+                        <td>李老师</td>
+                        <td>2017-3-5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="homework">
+            <div class="pull-right"><a href="#" class="btn btn-success">添加作业</a></div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>作业</th>
+                        <th>上交时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>人像摄影</td>
+                        <td>2017-3-5</td>
+                    </tr>
+                    <tr>
+                        <td>人像摄影</td>
+                        <td>2017-3-5</td>
+                    </tr>
+                    <tr>
+                        <td>人像摄影</td>
+                        <td>2017-3-5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 添加作业/试卷 -->
+<div class="addPaper" *ngIf="addPaper">
+	<div class="addPaper-back"></div>
+	<app-user-add-paper></app-user-add-paper>
+</div>
