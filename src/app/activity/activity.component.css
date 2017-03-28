@@ -1,0 +1,28 @@
+.activity-div {
+	margin: 0 auto;
+	margin-top: 60px;
+	width: 70%;
+	min-width: 1023px;
+}
+.list-classify {
+	background: url('../../assets/images/bg.jpg');
+}
+.breadcrumb {
+	background: url('../../assets/images/bg.jpg');
+}
+.activity-img {
+	width: 1023px;
+	height: 624px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.activity-img>img {
+	width: 100%;
+}
+.activity-detail {
+	color: #777;
+	margin-bottom: 50px;
+}
+.activity-detail h3 {
+	text-align: center;
+}

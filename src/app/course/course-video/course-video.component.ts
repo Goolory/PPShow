@@ -11,7 +11,7 @@ export class CourseVideoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-		$("#danmup").DanmuPlayer({ 
+		$("#danmup").DanmuPlayer({
 	    src: "../../../assets/videos/oceans.mp4", //视频源 
 	    height: "480px", //区域的高度 
 	    width: "800px", //区域的宽度 

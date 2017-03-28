@@ -1,8 +1,7 @@
 import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component'
-
+import { LoginComponent } from './login/login.component';
 export const appRoutes = [
 	{
 		path:'',
@@ -29,6 +28,9 @@ export const appRoutes = [
 	},{
 		path:'mypage',
 		loadChildren:'./mypage/mypage.module#MypageModule'
+	},{
+		path:'activity',
+		loadChildren:'./activity/activity.module#ActivityModule'
 	}
 	// ,{
 	// 	path:'**',//fallback router must in the last
