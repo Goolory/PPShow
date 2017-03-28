@@ -7,7 +7,7 @@
         <div class="panel-body">
             <div class="paper-title row">
                 <div class="form-group">
-                    <label for="addTitle" class="col-sm-3 control-label" style="text-align: right;margin-top: 10px">标题：</label>
+                    <label for="addTitle" class="col-sm-3 control-label" style="text-align: right;margin-top: 10px">试卷标题：</label>
                     <div class="col-sm-6">
                         <input type="text" name="addTitle" class="form-control">
                     </div>
@@ -24,16 +24,17 @@
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content">
+                        <!-- 共有的问题题干 -->
+                        <div class="question">
+                            <h4>题目</h4>
+                            <div id="summernote">请在此书写题干！</div>
+                        </div>
                         <div role="tabpanel" class="tab-pane active" id="choice">
+
                             <div class="media-body">
                                 <div class="stem">
-                                	<!-- 问题题干 -->
-                                    <div class="question">
-                                        <h4>题目</h4>
-                                        <textarea class="form-control" rows="3" placeholder="请在此处填写题目..."></textarea>
-                                    </div>
                                     <!-- 填写选项 -->
-                                    <div class="choice-item form-horizontal">
+                                    <!-- <div class="choice-item form-horizontal">
                                         <h4>选项</h4>
                                         <div class="form-group">
                                             <label for="addTitle" class="col-sm-1 control-label" style="text-align: right;">a：</label>
@@ -53,19 +54,25 @@
                                                 <input type="text" name="addTitle" class="form-control">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- 填写答案 -->
                                     <div class="answer">
                                         <h4>答案</h4>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> A
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> B
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> C
-                                        </label>
+                                        <div id="option_answer">
+                                             <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" value="option1">A
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="inlineRadioOptions" value="option2">B
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="inlineRadioOptions" value="option3">C
+                                            </label>
+                                        </div>
+                                       
+                                        <a href="javascript:;" class="addOption" title="">添加选项</a>
+                                        <a href="javascript:;" class="resetOption" title="">重置选项</a>
+
                                     </div>
                                     <!-- 填写解析 -->
                                     <div class="analyze">
@@ -76,9 +83,46 @@
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="judgment">..2.</div>
-                        <div role="tabpanel" class="tab-pane" id="shotAnswer">..3.</div>
-                        <div role="tabpanel" class="tab-pane" id="setPic">..4.</div>
+                        <div role="tabpanel" class="tab-pane" id="judgment">
+
+                            <div class="media-body">
+                                <div class="stem">
+                                    <!-- 填写答案 -->
+                                    <div class="answer">
+                                        <h4>答案</h4>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptionsJudge" id="inlineRadio1" value="option1"> 对
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptionsJudge" id="inlineRadio2" value="option2"> 错
+                                        </label>
+                                    </div>
+                                    <!-- 填写解析 -->
+                                    <div class="analyze">
+                                        <h4>解析</h4>
+                                        <textarea class="form-control" rows="3" placeholder="请在此处填写题目解析..."></textarea>
+                                    </div>
+                                    <button class="btn btn-success">下一题</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="shotAnswer">
+                            <!-- 填写解析 -->
+                            <div class="analyze">
+                                <h4>解析</h4>
+                                <textarea class="form-control" rows="3" placeholder="请在此处填写题目解析..."></textarea>
+                            </div>
+                            <button class="btn btn-success">下一题</button>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="setPic">
+                            <!-- 填写解析 -->
+                            <div class="analyze">
+                                <h4>解析</h4>
+                                <textarea class="form-control" rows="3" placeholder="请在此处填写题目解析..."></textarea>
+                            </div>
+                            <button class="btn btn-success">下一题</button>
+                        </div>
                     </div>
                 </div>
             </div>
