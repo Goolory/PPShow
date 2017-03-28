@@ -9,16 +9,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component'
 import { RouterModule } from '@angular/router';
-import { ActivityComponent } from './activity/activity.component';
-import { ListComponent } from './activity/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    ActivityComponent,
-    ListComponent,
   ],
   imports: [
     BrowserModule,
