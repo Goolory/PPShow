@@ -1,6 +1,90 @@
-<div class="container addPaper">
-	<p>
-  user-add-paper works!
-</p>
-
+<div class="addPaper">
+    <div class="panel panel-default" style="margin-bottom: 0">
+        <div class="panel-heading">
+            <span class="panel-title">{{panelTitle}}</span>
+            <a href="javascript:;" (click)="removePanel()" class="glyphicon glyphicon-remove pull-right"></a>
+        </div>
+        <div class="panel-body">
+            <div class="paper-title row">
+                <div class="form-group">
+                    <label for="addTitle" class="col-sm-3 control-label" style="text-align: right;margin-top: 10px">标题：</label>
+                    <div class="col-sm-6">
+                        <input type="text" name="addTitle" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="paper-body row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#choice" aria-controls="choice" role="tab" data-toggle="tab">选择题</a></li>
+                        <li role="presentation"><a href="#judgment" aria-controls="judgment" role="tab" data-toggle="tab">判断题</a></li>
+                        <li role="presentation"><a href="#shotAnswer" aria-controls="shotAnswer" role="tab" data-toggle="tab">简答题</a></li>
+                        <li role="presentation"><a href="#setPic" aria-controls="setPic" role="tab" data-toggle="tab">图片题</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="choice">
+                            <div class="media-body">
+                                <div class="stem">
+                                	<!-- 问题题干 -->
+                                    <div class="question">
+                                        <h4>题目</h4>
+                                        <textarea class="form-control" rows="3" placeholder="请在此处填写题目..."></textarea>
+                                    </div>
+                                    <!-- 填写选项 -->
+                                    <div class="choice-item form-horizontal">
+                                        <h4>选项</h4>
+                                        <div class="form-group">
+                                            <label for="addTitle" class="col-sm-1 control-label" style="text-align: right;">a：</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="addTitle" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="addTitle" class="col-sm-1 control-label" style="text-align: right;">b：</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="addTitle" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="addTitle" class="col-sm-1 control-label" style="text-align: right;">c：</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="addTitle" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 填写答案 -->
+                                    <div class="answer">
+                                        <h4>答案</h4>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> A
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> B
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> C
+                                        </label>
+                                    </div>
+                                    <!-- 填写解析 -->
+                                    <div class="analyze">
+                                        <h4>解析</h4>
+                                        <textarea class="form-control" rows="3" placeholder="请在此处填写题目解析..."></textarea>
+                                    </div>
+                                    <button class="btn btn-success">下一题</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="judgment">..2.</div>
+                        <div role="tabpanel" class="tab-pane" id="shotAnswer">..3.</div>
+                        <div role="tabpanel" class="tab-pane" id="setPic">..4.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="pull-right btn btn-success">完成</button>
+        </div>
+    </div>
 </div>

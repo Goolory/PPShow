@@ -12,7 +12,7 @@
     </ul>
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade in active" id="test">
-            <div class="pull-right"><a href="javascritp:;" (click)="addPaper=!addPaper" class="btn btn-success">添加试卷</a></div>
+            <div class="pull-right"><a href="javascritp:;" (click)="addP()" class="btn btn-success">添加试卷</a></div>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -41,7 +41,7 @@
             </table>
         </div>
         <div class="tab-pane fade" id="homework">
-            <div class="pull-right"><a href="#" class="btn btn-success">添加作业</a></div>
+            <div class="pull-right"><a href="javascritp:;" (click)="addTest()" class="btn btn-success">添加作业</a></div>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -71,6 +71,6 @@
 
 <!-- 添加作业/试卷 -->
 <div class="addPaper" *ngIf="addPaper">
-	<div class="addPaper-back"></div>
-	<app-user-add-paper></app-user-add-paper>
+	<div class="addPaper-back" (click)="addPaper=!addPaper"></div>
+	<app-user-add-paper panelTitle="{{panelTitle}}" (remove)="addPaper=!addPaper"></app-user-add-paper>
 </div>
